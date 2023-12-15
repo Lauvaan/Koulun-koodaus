@@ -115,6 +115,7 @@ elif esfi == "espanja":
         elif word == "en tiedä":
             print("Ei se mitään, oikea vastaus on ", "'", (wordses[index]), "'", sep="")
             print("Ensi kerralla sitten osaat!")
+            print("------------------")
             yesno = str(input("Haluatko pelata(kyllä/en)? "))
         else:
             print("Väärin! Oikea vastaus olisi ollut ", "'", (wordses[index]), "'", sep="")
