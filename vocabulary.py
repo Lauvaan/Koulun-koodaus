@@ -80,7 +80,6 @@ esfi = str(input("Haluatko kääntää sanoja espanjaksi vai suomeksi(espanja/su
 
 if esfi == "suomi":
     while(yesno != "en"):
-        yesno = str(input("Haluatko pelata(kyllä/en)? "))
         print("------------------")
         entry = random.choice(wordses)
         print("'", entry, "'", end=" ", sep="")
@@ -90,17 +89,19 @@ if esfi == "suomi":
             print("Oikein!")
             print("------------------")
             print("------------------")
+            yesno = str(input("Haluatko pelata(kyllä/en)? "))
         elif word == "en tiedä":
             print("Ei se mitään, oikea vastaus on ", "'", (wordsfi[index]), "'", sep="")
             print("Ensi kerralla sitten osaat!")
+            yesno = str(input("Haluatko pelata(kyllä/en)? "))
         else:
             print("Väärin! Oikea vastaus olisi ollut ", "'", (wordsfi[index]), "'", sep="")
             print("------------------")
             print("------------------")
+            yesno = str(input("Haluatko pelata(kyllä/en)? "))
 
 elif esfi == "espanja":
     while(yesno != "en"):
-        yesno = str(input("Haluatko pelata(kyllä/en)? "))
         print("------------------")
         entry = random.choice(wordsfi)
         print("'", entry, "'", end=" ", sep="")
@@ -110,13 +111,16 @@ elif esfi == "espanja":
             print("Oikein!")
             print("------------------")
             print("------------------")
+            yesno = str(input("Haluatko pelata(kyllä/en)? "))
         elif word == "en tiedä":
             print("Ei se mitään, oikea vastaus on ", "'", (wordses[index]), "'", sep="")
             print("Ensi kerralla sitten osaat!")
+            yesno = str(input("Haluatko pelata(kyllä/en)? "))
         else:
             print("Väärin! Oikea vastaus olisi ollut ", "'", (wordses[index]), "'", sep="")
             print("------------------")
             print("------------------")
+            yesno = str(input("Haluatko pelata(kyllä/en)? "))
     
 
 # Thanks the user for playing, and welcomes them to play again
