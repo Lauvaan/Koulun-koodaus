@@ -32,7 +32,7 @@ wordses = ["que bien nos lo pasamos",
            "pronto",
            "la suerte",
            "ademas",
-           "Que pena",
+           "que pena",
            ]
 wordsfi = ["olipa meillä hauskaa",
            "puolinukuksissa",
